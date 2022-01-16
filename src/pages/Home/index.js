@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import {View, Text, TextInput} from 'react-native';
+import {View, Text, TextInput, FlatList} from 'react-native';
 import {Button} from '../../components/Button';
 import {SkillCard} from '../../components/SkillCard';
 
@@ -27,9 +27,11 @@ export function Home() {
         {' '}
         My skills in the jungle
       </Text>
-      {mySkills.map(skill => (
-        <SkillCard skill={skill} />
-      ))}
+      <FlatList
+        data={mySkills}
+        keyExtractor={item => item}
+        renderItem={({item}) => <SkillCard skill={item} />}
+      />
     </View>
   );
 }
