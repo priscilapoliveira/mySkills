@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import {View, Text, TextInput, FlatList} from 'react-native';
 import {Button} from '../../components/Button';
 import {SkillCard} from '../../components/SkillCard';
@@ -8,14 +8,27 @@ import styles from './styles';
 export function Home() {
   const [newSkill, setNewSkill] = useState('');
   const [mySkills, setMySkills] = useState([]);
+  const [gretting, setGretting] = useState('');
 
   function handleAddNewSkill() {
     setMySkills([...mySkills, newSkill]);
   }
 
+  useEffect(() => {
+    const currentHour = new Date().getHours();
+
+    if (currentHour < 12) {
+      setGretting('Good morning');
+    } else if (currentHour >= 12 && currentHour < 18) {
+      setGretting('Good afternoon');
+    } else {
+      setGretting('Good nigth');
+    }
+  }, []);
+
   return (
     <View style={styles.container}>
-      <Text style={styles.title}> Welcome to the jungle</Text>
+      <Text style={styles.title}>{gretting} and welcome to the jungle</Text>
       <TextInput
         style={styles.input}
         placeholder="New skill for jungle"
