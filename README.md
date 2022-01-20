@@ -13,8 +13,8 @@ Consolidating knowledge with native CLI.
 
 ## Interface
 
-<img src="https://drive.google.com/file/d/1geIwZk6cze29AqdUq8kPJwbbLJFkXDJi/view?usp=sharing" width="60%" />
-<img src="https://drive.google.com/file/d/1UfzMMfIbeFNOwK0AkdUV5HdbC6Srx00V/view?usp=sharing" width="60%" />
+<img src="https://github.com/poliveira13/mySkills/blob/main/.github/assets/Screenshot_1642681755.png" width="60%" />
+<img src="https://github.com/poliveira13/mySkills/blob/main/.github/assets/Screenshot_1642681835.png" width="60%" />
 
 
 
