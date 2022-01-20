@@ -12,10 +12,9 @@ Consolidating knowledge with native CLI.
 * Typescript
 
 ## Interface
-
+<p>
 <img src="https://github.com/poliveira13/mySkills/blob/main/.github/assets/Screenshot_1642681755.png" width="30%" />
 <img src="https://github.com/poliveira13/mySkills/blob/main/.github/assets/Screenshot_1642681835.png" width="30%" />
-
-
+</p>
 
 
